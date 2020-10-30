@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+      <link href="img/icon.png" rel="icon">
+      <link href="img/icon.png" rel="apple-touch-icon">
+      <title>Cadastro Cursos Color.Pics</title>
+
+      <!-- Bootstrap -->
+      <link href="css/bootstrap.min.css" rel="stylesheet">
+      <link href="css/bootstrap.css" rel="stylesheet">
+      <link href="css/bootstrap-theme.css" rel="stylesheet">
+
+  </head>
+
+<body>
+   <!--navbar menu-->
+ <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <a class="navbar-brand" href="#">
+    <img src="img/icon.png" width="30" height="30" class="d-inline-block align-top" alt="" loading="lazy">
+    COLOR.PICS
+  </a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Home <span class="sr-only"></span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Sobre</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Serviços
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="#">Layout de Site</a>
+          <a class="dropdown-item" href="#">Artes Digitais</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">Produção de Beats</a>
+        </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Portfolio</a>
+      </li>
+    </ul>
+    <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="search" placeholder="O que procura?" aria-label="Search">
+      <button class="btn btn-outline-warning my-2 my-sm-0" type="submit">Pesquisar</button>
+    </form>
+  </div>
+</nav>
+
+  <div class="container">
+        <h4><center><strong>Cadastre-se para participar dos nossos cursos online gratuitos!</strong></center></h4>
+        <h5><center>Já tem uma conta?<a href="login.html"> Login</a></center></h5><br>
+
+<!--formulario de cadastro-->
+  <form class="form-horizontal">
+      <h4 class="form-signin-heading"><center>Preencha o formulário de inscrição:</center></h4>
+
+        <div class="form-style">
+         <br><p><strong>Nome completo</strong></p>
+            <label for="inputName" class="sr-only">Nome completo</label>
+            <input type="text" id="inputName" class="form-control" required="" placeholder="Nome"><br>
+
+          <p><strong>Data de nascimento</strong></p>
+            <label for="inputDate" class="sr-only">Data de nascimento</label>
+            <input type="date" id="inputDate" class="form-control" required="" placeholder="dd/mm/aaaa"><br>
+
+          <p><strong>Telefone</strong></p>
+            <label for="phone" class="sr-only" >Seu número de telefone</label>
+            <input type="tel" id="inputTelefone" required="" class="form-control" class="glyphicon glyphicon-earphone" placeholder="Ex: (XX) XXXXX-XXXX" maxlength="13" mask="(99) 99999-9999"><br>
+
+          <p><strong>Sexo</strong></p>
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="male">Masculino</label><br>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Feminino</label><br>
+            <input type="radio" id="naobinario" name="gender" value="naobinario">
+            <label for="naobinario">Não-binário</label><br>
+            <input type="radio" id="other" name="gender" value="other">
+            <label for="other">Outro</label><br><br>
+
+          <p><strong>CPF</strong></p>
+            <label for="inputCpf" class="sr-only">Seu cpf</label>
+            <input type="text"  class="form-control" data-mask="000.000.000-00" required=""  placeholder="Ex: 000.000.000-00"><br>
+
+          <p><strong>Email</strong></p>
+            <input type="email" required="" id="inputEmail" class="form-control" placeholder="Ex: email@email.com">
+            <label for="inputEmail" class="sr-only">Seu email</label><br>
+
+          <p><strong>Senha</strong></p>
+          <h6>(Crie uma senha forte com Letras, Números e Caracteres especiais)</h6>
+            <label for="inputPassword" class="sr-only">Senha</label>
+            <input type="password" required="" id="inputPassword" class="form-control" placeholder="Ex: @1JGrVTs6!#o$cadastro&" minlength="8" maxlength="25"><br>
+        </div><br><br>
+
+        <style type="text/css">
+          .form-style {
+            background-color:rgb(242, 242, 242);
+          }
+
+          .form-style p {
+            color: rgb(74, 106, 201);
+
+          }
+        </style>
+
+    <!--segunda parte do formulario: cursos-->
+    <div class="form-cursos">
+      <br><h4><strong><center>Cursos disponíveis</center></strong></h4>
+
+          <p><strong>Escolha o curso:</strong></p>
+            <select class="form-control" id="inputcursos" name="cursos">
+              <option value="padrao">---Selecione uma das opções---</option>
+              <option value="design">Curso Design Gráfico COMPLETO</option>
+              <option value="interfaces">UI Design: Design de Interfaces com foco em Projetos Web</option>
+              <option value="adobe">Curso Adobe Photoshop 2018 - do Iniciante ao Avançado</option>
+              <option value="video">Curso Edição de Vídeo COMPLETO</option>
+              <option value="videoadobe">Curso de Edição de Vídeo com Adobe Premiere Pró CS6 e CC</option>
+              <option value="javascript">Curso Web Moderno Completo com JavaScript 2020 + Projetos</option>
+              <option value="web">Curso Web Design Completo: HTML5, CSS3 e JS + 5 Projetos</option>
+            </select><br>
+
+          <p><strong>Horário:</strong></p>
+            <select class="form-control" id="inputhorarios" name="horarios">
+              <option value="padrao">---Selecione uma das opções---</option>
+              <option value="manha">Manhã | 8h às 12h</option>
+              <option value="tarde">Tarde | 13h às 17h</option>
+              <option value="noite">Noite | 18h às 22h</option>
+            </select><br>
+    </div>
+
+    <style type="text/css">
+      .form-cursos {
+        background-color:rgb(241, 241, 241);
+      }
+
+      .form-cursos h4{
+        color: rgb(51, 125, 194);
+      }
+    </style>
+    
+    <div class="checkbox">
+      <label> <input type="checkbox" value="remember-me">Concordo com os termos de serviço da Color.Pics</label>
+    </div><br>
+
+    <button class="btn btn-lg btn-info" type="button" class="btn btn-primary" data-toggle="modal" data-target=".bs-example-modal-lg">Confirmar cadastro</button>
+
+    <!--modal de confirmação de cadastro-->
+    <section id="modal-style">
+     <div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+      <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+
+         <div class="modal-header">
+            <h4 class="modal-title"><strong><center>Cadastro realizado com sucesso!</center></strong></h4>
+         </div>
+
+         <div class="modal-body">
+            <p>Seus dados para inscrição do curso foram cadastrados com sucesso.<br><br>Em breve entraremos em contato com você para informar:</p>
+              <ul>
+                <li><h5><strong>Data de início do curso.</strong></h5></li>
+                <li><h5><strong>Duração das aulas.</strong></h5></li>
+                <li><h5><strong>Professores e Orientadores.</strong></h5></li>
+                <li><h5><strong>Programação completa.</strong></h5></li>
+              </ul><br>
+            <p>Atenciosamente, Equipe Color.Pics</p>
+         </div>
+
+         <div class="modal-footer">
+          <button type="button" class="btn btn-outline-info" class="btn navbar-btn"><a href="index.html">Voltar para Home</a></button>
+            <button type="button" class="btn btn-info" data-dismiss="modal"  class="close"  aria-label="Close"><span aria-hidden="true">OK</span></button>
+         </div>
+        </div>
+      </div>
+     </div>
+    </section>
+
+  </form>
+
+  </div><br><br> <!-- /container -->
+
+  <style type="text/css">
+    .modal-title {
+     color:rgb(27, 121, 15);
+     }
+
+     .modal-content{
+       background-color: #E6F8E0;
+     }
+
+     .modal-footer a{
+      color: black;
+
+     }
+  </style>
+
+<!--footer-->
+  <footer>
+
+    <div class="container-fluid">
+       <center> &copy; 2020, <strong>Color.Pics</strong>
+      <div class="credits">
+        <center>Designed by <a href="https://github.com/GabriellaDomingues">Gabriela Silva Lopes</a><br>
+      </div>
+    </div>
+  </footer> <!-- End Footer -->
+
+  <style type="text/css">
+    footer {
+      color: rgb(212, 211, 211);
+      background-color:rgb(40, 40, 40);
+    }
+  </style>
+
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <!-- Include all compiled plugins (below), or include individual files as needed -->
+        <script src="js/bootstrap.min.js"></script>
+
+</body>
+</html>
+
+
